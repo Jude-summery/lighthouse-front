@@ -1,4 +1,5 @@
-# umi project
+# lighthouse-front
+the front-end of lighthouse
 
 ## Getting Started
 
@@ -13,6 +14,3 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
-
-# lighthouse-front
-the front-end of lighthouse

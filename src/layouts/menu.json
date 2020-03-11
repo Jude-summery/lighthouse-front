@@ -1,0 +1,8 @@
+{
+  "menu": [
+    {"name": "项目", "location": "/project"},
+    {"name": "动态", "location": "/info"},
+    {"name": "日历", "location": "/calendar"},
+    {"name": "汇报", "location": "/report"}
+  ]
+}
