@@ -6,6 +6,7 @@ export default defineConfig({
     type: 'hash',
   },
   routes: [
+    { path: '/', component: '@/layouts/index'}
     { path: '/', component: '@/pages/index' },
   ],
 });
