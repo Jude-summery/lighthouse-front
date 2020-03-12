@@ -14,7 +14,7 @@ export default defineConfig({
       path: '/m',
       component: '@/layouts/index',
       routes: [
-        { path: '/home', component: '@/pages/Home/index', exact: true },
+        { path: 'home', component: '@/pages/Home/index', exact: true },
         {
           path: '*',
           redirect: '/404'

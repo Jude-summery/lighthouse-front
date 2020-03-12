@@ -13,7 +13,7 @@ const BasicLayout = (props: Props) => {
         console.log(item, key, keyPath, domEvent)
     }
     return (
-        <Layout>
+        <Layout style={{height: '100vh'}}>
             <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
                 <div className='logo' />
                 <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['2']} style={{ lineHeight: '64px' }} onClick={onMenuClick}>
