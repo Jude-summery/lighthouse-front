@@ -5,6 +5,7 @@ export default defineConfig({
   history: {
     type: 'hash',
   },
+  dva: {},
   routes: [
     {
       path: '/',
