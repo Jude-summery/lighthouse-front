@@ -6,11 +6,11 @@ export interface LoginModelType {
 
 }
 
-const Login = {
-    namespace: 'Login',
+const Home = {
+    namespace: 'Home',
     state: {
       name: ''
     }
   }
   
-export default Login
+export default Home
