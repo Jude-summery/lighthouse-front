@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { connect } from 'umi'
 import { Card, Avatar } from 'antd'
 import styles from './index.less'
 
 const { Meta } = Card
 
-export default () => {
+const Home: FC = ({ Home }) => {
+  console.log(Home)
   return (
     <div className={styles.container}>
       {/* <h1 className={styles.title}>Page index</h1> */}
@@ -30,3 +32,5 @@ export default () => {
     </div>
   );
 }
+
+export default connect( ({ Home }) => ({ Home }))(Home)

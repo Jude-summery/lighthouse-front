@@ -9,7 +9,7 @@ export interface LoginModelType {
 const Login = {
     namespace: 'Login',
     state: {
-      name: ''
+      name: 'xiazz'
     }
   }
   

@@ -9,4 +9,4 @@ class Login extends React.Component{
   }
 }
 
-export default connect( ({ Login }) => ({ Login }) )(Login)
+export default connect( ({ Login }: any) => ( { Login } ) )(Login)
