@@ -9,7 +9,7 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/m'
+      redirect: '/m/home'
     },
     { 
       path: '/m',
@@ -21,6 +21,10 @@ export default defineConfig({
           redirect: '/404'
         },
       ],
+    },
+    {
+      path: '/login',
+      component: '@/pages/Login/index',
     },
     {
       path: '/404',
