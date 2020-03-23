@@ -1,6 +1,7 @@
-import React from 'react';
-import { connect } from 'umi';
-import { Form, Input, Button, Card } from 'antd';
+import React from 'react'
+import { connect } from 'umi'
+import { Form, Input, Button, Card } from 'antd'
+import Curtain from './Curtain'
 
 import styles from './index.less';
 
@@ -17,7 +18,8 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-        <Card className={styles.loginForm}>
+        <Curtain />
+        {/* <Card className={styles.loginForm}>
           <Form
             {...layout}
           >
@@ -41,7 +43,7 @@ class Login extends React.Component {
           </Button>
             </Form.Item>
           </Form>
-        </Card>
+        </Card> */}
       </div>
     )
   }

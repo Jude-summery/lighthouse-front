@@ -2,3 +2,32 @@
   width: 440px;
   margin: 0 auto;
 }
+
+.curtain-visible{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.curtain-hidden{
+  position: relative;
+  top: -100vh;
+  left: 0;
+  transition: 1s top;
+}
+
+.curtain-pic1{
+  width: 100vw;
+  height: 100vh;
+  background: url('../../assets/img/login-carousel1.jpg') no-repeat;
+  background-size: 100% 100%;
+  h1{
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+  .curtain-hidden-h1:extend(h1){
+    color: #000000;
+    transition: 1s color;
+  }
+}
