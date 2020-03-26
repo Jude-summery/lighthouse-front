@@ -17,7 +17,7 @@ const tailLayout = {
 class Login extends React.Component {
   render() {
     return (
-      <div>
+      <div className={styles['login-page-background']}>
         <Curtain />
         {/* <Card className={styles.loginForm}>
           <Form

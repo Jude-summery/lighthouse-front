@@ -3,6 +3,7 @@ import { Layout, Menu, Breadcrumb } from 'antd'
 import { ClickParam } from 'antd/lib/menu'
 const { Header, Content, Footer } = Layout
 import { menu } from './menu.json'
+import './index.less'
 
 interface Props {
     children: ReactNode
