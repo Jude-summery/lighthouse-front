@@ -2,7 +2,11 @@ import React, { FC, useState, useEffect } from 'react'
 import Texty from 'rc-texty'
 import styles from './index.less'
 
-const Curtain: FC = () => {
+interface IProps {
+  getStatus: () => void
+}
+
+const Curtain: FC<IProps> = (props) => {
 
   const [className, setcClassName] = useState('curtain-visible')
   const [textIndex, setTextIndex] = useState(0) 
@@ -14,7 +18,6 @@ const Curtain: FC = () => {
       } else {
         setTextIndex(0)
       }
-      
     }, 5000)
 
     return () => {
@@ -22,9 +25,14 @@ const Curtain: FC = () => {
     }
   })
 
+  const handleClick = () => {
+    setcClassName('curtain-hidden')
+    props.getStatus()
+  }
+
   return (
     <>
-      <div onClick={() => setcClassName('curtain-hidden')} className={styles[className]}>
+      <div onClick={handleClick} className={styles[className]}>
         <div className={styles['curtain-pic1']}>
           <div className={styles['text-container']}>
             <div className={styles['text-decoration-before']}></div>
