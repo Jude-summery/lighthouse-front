@@ -1,4 +1,4 @@
-import React, { useEffect, ReactNode, MouseEvent } from 'react'
+import React, { ReactNode } from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd'
 import { ClickParam } from 'antd/lib/menu'
 const { Header, Content, Footer } = Layout
