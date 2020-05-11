@@ -6,6 +6,9 @@ import Issue from './Issue'
 import styles from './index.less'
 
 const Home: FC = ({ Home }) => {
+  Home.query({
+    payload: {a:1}
+  })
   return (
     <div className={styles.container}>
       <Card
