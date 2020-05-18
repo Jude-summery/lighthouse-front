@@ -6,11 +6,11 @@ the front-end of lighthouse
 Install dependencies,
 
 ```bash
-$ yarn
+$ npm i
 ```
 
 Start the dev server,
 
 ```bash
-$ yarn start
+$ umi dev
 ```
