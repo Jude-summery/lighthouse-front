@@ -1,3 +1,6 @@
 export default {
-    namespace: 'app'
+    namespace: 'app',
+    state: {
+        name: 'app'
+    }
 }

@@ -5,7 +5,7 @@ const { Meta } = Card
 
 const Issue: FC = () => {
   return (
-<Card
+    <Card
       style={{ width: 300 }}
       cover={
         <img
@@ -14,7 +14,7 @@ const Issue: FC = () => {
         />}
     >
       <Meta
-        avatar={<img style={{width: 30}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+        avatar={<img style={{ width: 30 }} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
         title="Card title"
         description="This is the description"
       />
