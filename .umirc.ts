@@ -35,4 +35,11 @@ export default defineConfig({
       redirect: '/404'
     },
   ],
+  proxy: {
+    '/api': {
+      'target': 'http://localhost:3000/',
+      'changeOrigin': true,
+      'pathRewrite': { '^/api' : '/api' },
+    },
+  },
 });

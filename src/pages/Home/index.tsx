@@ -1,11 +1,19 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import { connect } from 'umi'
 import { Card } from 'antd'
+import axios from 'axios'
 import Issue from './Issue'
 
 import styles from './index.less'
 
 const Home: FC = ({}) => {
+
+  useEffect(()=>{
+    axios.get('/api/tasks').then(body => {
+      console.log(body)
+    })
+  })
+
   return (
     <div className={styles.container}>
       <Card
