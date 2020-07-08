@@ -3,7 +3,28 @@ import { Card } from 'antd'
 
 const { Meta } = Card
 
-const Issue: FC = () => {
+interface IssueProps {
+  data: {
+    id: number,
+    taskName: string,
+    taskContent: string,
+    taskType: number,
+    taskStatus: number,
+    taskPlanEndTime: string,
+    taskEndTime: string|null,
+    creatorId: string|number,
+    creatorName: string,
+    createTime: string|null,
+    executorId: string|null,
+    executorName: string|null,
+    executeTime: string|null,
+    process: string|null,
+    createdAt: string,
+    updatedAt: string
+  }
+}
+
+const Issue: FC<IssueProps> = ({data}) => {
   return (
     <Card
       style={{ width: 300 }}
@@ -15,8 +36,8 @@ const Issue: FC = () => {
     >
       <Meta
         avatar={<img style={{ width: 30 }} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-        title="Card title"
-        description="This is the description"
+        title={data.taskName}
+        description={data.taskContent}
       />
     </Card>
   )
