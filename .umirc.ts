@@ -6,6 +6,9 @@ export default defineConfig({
     type: 'hash',
   },
   dva: {},
+  theme: {
+    '@primary-color': '#52c41a',
+  },
   routes: [
     {
       path: '/',
