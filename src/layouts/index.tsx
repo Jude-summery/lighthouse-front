@@ -15,23 +15,18 @@ const BasicLayout = (props: Props) => {
     }
     return (
         <Layout style={{height: '100vh'}}>
-            <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+            <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background: '#f6ffed' }}>
                 <div className='logo' />
-                <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['2']} style={{ lineHeight: '64px' }} onClick={onMenuClick}>
+                <Menu mode='horizontal' defaultSelectedKeys={['2']} style={{ lineHeight: '64px', background: '#f6ffed' }} onClick={onMenuClick}>
                     {menu.map((item) => <Menu.Item key={item.location}>{item.name}</Menu.Item>)}
                 </Menu>
             </Header>
-            <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-                <Breadcrumb style={{ margin: '16px 0' }}>
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>List</Breadcrumb.Item>
-                    <Breadcrumb.Item>App</Breadcrumb.Item>
-                </Breadcrumb>
+            <Content className="site-layout" style={{ marginTop: 64 }}>
                 <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
                     {props.children}
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+            <Footer style={{ textAlign: 'center', background: '#FFFFFF' }}>Lighthouse ©2020 Created by Space Cloud</Footer>
         </Layout>
     )
 }
