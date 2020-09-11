@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from 'react'
 import { connect } from 'umi'
-import { Card, Button } from 'antd'
+import { Card, Button, Row, Col } from 'antd'
 import axios from 'axios'
 import Issue from './Issue'
 import ModelForm from './ModelForm'
@@ -43,11 +43,16 @@ const Home: FC = ({ }) => {
         title='事务招领处'
         extra={<Button type='primary' onClick={onAdd}><PlusOutlined />新增</Button>}
       >
-        {
-          tasks.map(item => (
-            <Issue data={item} />
-          ))
-        }
+        <Row gutter={48}>
+          {
+            tasks.map(item => (
+              <Col span={8}>
+                <Issue data={item} /> 
+              </Col>
+            ))
+          }
+        </Row>
+    
       </Card>
       <ModelForm onCancel={onCancel} visible={modelVisible} title={modelTitle} updateList={updateList} />
     </div>
