@@ -45,7 +45,7 @@ interface IssueDetailProps {
     updatedAt: string
   },
   isVisible: boolean,
-  handleCancel: () => void
+  handleCancel: (value: boolean) => void
 }
 
 const IssueDetail: FC<IssueDetailProps> = ({record, isVisible, handleCancel}) => {
@@ -83,7 +83,7 @@ const Issue: FC<IssueProps> = ({data}) => {
         description={data.taskContent}
       />
     </Card>
-      <IssueDetail record={data} isVisible={isVisible} handleCancel={(data) => setIsVisible(data)} />
+      <IssueDetail record={data} isVisible={isVisible} handleCancel={(value) => setIsVisible(value)} />
     </>
 
   )
