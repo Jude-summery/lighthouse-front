@@ -1,4 +1,4 @@
-# lighthouse-front
+# lighthouse-front <img src="https://app.travis-ci.com/Jude-summery/lighthouse-front.svg?branch=master" />
 the front-end of lighthouse
 
 ## Getting Started
